@@ -1,3 +1,28 @@
-$font-oswald : 'Oswald', sans-serif;
+$font-muli: 'Muli', sans-serif;
+$font-rale: 'Raleway', sans-serif;
 $font-mont: 'Montserrat', sans-serif;
 $color-white:#ffff;
+$color-nav:#35BDEE;
+
+@mixin paddingPart(){
+    padding:10rem 0;
+}
+@mixin h1Style(){
+      display:inline-block;
+       font-size: 3.5rem;
+        margin-bottom: 3rem;
+        border-bottom: none;
+        padding-bottom: 3rem;
+        font-family: $font-muli;
+        border-bottom: 1px solid #DDDDDD;
+        letter-spacing: 4px;
+        font-weight:400;
+}
+@mixin gridWrap($col){
+       display:grid;
+       grid-template-columns: repeat($col,1fr);
+}
+.container {
+    max-width: 120rem;
+    margin:0 auto;
+}

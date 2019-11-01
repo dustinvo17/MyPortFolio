@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
@@ -13,40 +13,231 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
+    <link rel="icon" href="./image/logo.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Muli|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 
 <body>
+
     <header class="header">
         <div class="navbar">
             <div class="navbar-icon">
-                <img src="http://html.lionode.com/jobado/layout/images/logo2.png">
+                <img src="./image/logo.jpg">
             </div>
             <ul class="navbar-links">
-                <li class="navbar-links_item"><a>Home</a></li>
-                <li class="navbar-links_item"><a>About</a></li>
-                <li class="navbar-links_item"><a>Work</a></li>
-                <li class="navbar-links_item"><a>Contact</a></li>
+                <li class="navbar-links_item">
+                    <a>Home</a>
+                </li>
+                <li class="navbar-links_item">
+                    <a>About</a>
+                </li>
+                <li class="navbar-links_item">
+                    <a>Work</a>
+                </li>
+                <li class="navbar-links_item">
+                    <a>Contact</a>
+                </li>
             </ul>
         </div>
-      
-            <video src="image/smoke.mp4" autoplay muted></video>
-            <h1 class="header-main">
-                <span>D</span>
-                <span>U</span>
-                <span>S</span>
-                <span>T</span>
-                <span>I</span>
-                <span>N</span>
-                <span>V</span>
-                <span>O</span>
-            </h1>
-        
-            <h1 data-text="Front-End Developer"class="header-intro">
-                Front-End Developer
-            </h1>
+
+        <video src="image/smoke.mp4" autoplay muted></video>
+        <h1 class="header-main">
+            <span>D</span>
+            <span>U</span>
+            <span>S</span>
+            <span>T</span>
+            <span>I</span>
+            <span>N</span>
+            <span>V</span>
+            <span>O</span>
+        </h1>
+
+        <h1 data-text="Front-End Developer" class="header-intro">
+            Front-End Developer
+        </h1>
+        <a href="#" class="header-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            LATEST WORKS
+        </a>
+        <div class="header-arrow-down">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
-    <script src="" async defer></script>
+    <div class="about container">
+
+        <div class="about-self">
+            <h1>About me
+            </h1>
+            <div>
+                <p>Hello There! My name is Dustin, and I'm a Front End Developer. Building
+                    responsive, friendly and great user experience website is my passion. I'm always
+                    looking for opportunity to learn new technology. I enjoy spending my free time
+                    increasing my knowledge of Web Development and building new projects
+                </p>
+            </div>
+        </div>
+        <div class="about-img">
+            <img src="image/about-img.png">
+        </div>
+    </div>
+    <div class="skills container">
+        <div class="skills-left">
+            <div class="cube">
+                <div class="cube-face">
+                    <img src="image/html.png">
+                </div>
+                <div class="cube-face">
+                    <img src="image/css.png">
+                </div>
+                <div class="cube-face">
+                    <img src="image/js.svg">
+                </div>
+                <div class="cube-face">
+                    <img src="image/sass.png">
+                </div>
+                <div class="cube-face">
+                    <img src="image/react.png">
+                </div>
+                <div class="cube-face">
+                    <img src="image/redux.png">
+                </div>
+
+            </div>
+        </div>
+        <div class="skills-right">
+            <h1>Technological skills</h1>
+            <ul class="skills-right-grid">
+                <li>HTML
+                    <i class="fab fa-html5"></i>
+                </li>
+                <li>CSS
+                    <i class="fab fa-css3-alt"></i>
+                </li>
+                <li>SASS
+                    <i class="fab fa-sass"></i>
+                </li>
+                <li>Javascript
+                    <i class="fab fa-js"></i>
+                </li>
+                <li>jQuery
+                    <i class="far fa-file-code"></i>
+                </li>
+                <li>React
+                    <i class="fab fa-react"></i>
+                </li>
+                <li>Redux
+                    <i class="fas fa-sitemap"></i>
+                </li>
+                <li>Git / Github
+                    <i class="fab fa-github"></i>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="project container">
+        <h1>My Latest Work</h1>
+        <ul class="project-list">
+            <li class="project-list-item">
+                <div>
+                    <img src="image/project1.png">
+                </div>
+                <h2>GearM</h2>
+                <p>eCommerce site that sells different gaming gears.</p>
+                <p class="tech">Technology used: React, Redux, Semantic UI</p>
+                  <a>GitHub  <i class="fab fa-github"></i></a>
+            </li>
+            <li class="project-list-item">
+                <div>
+                    <img src="image/project2.png">
+                </div>
+                <h2>DV Theater</h2>
+                <p>Movie application that displays over thousands of movies information.
+                </p>
+                <p  class="tech">Technology used: React, Redux, Ajax, TMDB API</p>
+                <a>GitHub  <i class="fab fa-github"></i></a>
+            </li>
+            <li class="project-list-item">
+                <div>
+                    <img src="image/project3.png">
+                </div>
+                <h2>Redtown</h2>
+                <p>Steakhouse restaurant website.</p>
+                <p  class="tech">Technology used: HTML, CSS, Sass, Jquery
+                </p>
+                  <a>GitHub  <i class="fab fa-github"></i></a>
+            </li>
+            <li class="project-list-item">
+                <div>
+                    <img src="image/project4.png">
+                </div>
+                <h2>eSite</h2>
+                <p>HTML Email Template</p>
+                <p  class="tech">Technology used: HTML, CSS
+                </p>
+                  <a>Github  <i class="fab fa-github"></i></a>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="footer">
+        <div class="container">
+            <h1>Contact me</h1>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-facebook-f"></span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-linkedin-in"></span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-github"></span>
+                    </a>
+                </li>
+                  <li>
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-instagram"></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Address: Houston, TX 77084</p>
+                <p><i class="fas fa-envelope"></i> Email: datvo.vtd@gmail.com</p>
+                <p><i class="fas fa-phone fa-flip-horizontal"></i> Phone: (346) 269-4988</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js" async defer></script>
 </body>
 
 </html>

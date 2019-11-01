@@ -1,0 +1,60 @@
+@import './variable';
+.project {
+     @include paddingPart();
+     & h1 {
+          @include h1Style();
+          
+     }
+     &-list {
+         @include gridWrap(3);
+         grid-gap:3rem;
+
+         &-item {
+             display:flex;
+             flex-direction: column;
+             align-items: center;
+             border:1px solid #DDDDDD;
+             & > * {
+                 margin-bottom:2rem;
+             }
+             & div {
+                 width:100%;
+                 height:35rem;
+                 & img {
+                     width:100%;
+                     height:100%;
+                     object-fit: fill;
+                   
+                 }
+             }
+             & p {
+                 font-size:1.6rem;
+                    padding:0 1rem;
+                 text-align: center;
+
+                
+             }
+             & .tech{
+                 margin-top:auto;
+             }
+             & h2 {
+                 font-size:2rem;
+             }
+             & a {
+                 font-size:1.6rem;
+                 font-weight:700;
+                 margin-top:auto;
+                 color:#999999;
+               
+                
+                 & i {
+                     font-size:2rem;
+                     margin-left:5px;
+                     
+                 }
+             }
+            
+            
+         }
+     }
+    }

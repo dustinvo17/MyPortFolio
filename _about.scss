@@ -1,0 +1,144 @@
+@import './variable';
+
+.about {
+
+    @include paddingPart();
+
+
+
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      
+        @include h1Style();
+    }
+
+    & p {
+        font-family: $font-rale;
+        font-size: 1.6rem;
+        line-height: 2.5;
+       
+
+    }
+
+    &-img {
+        max-width: 40rem;
+    }
+
+    &-self {
+
+        max-width: 60rem;
+
+    }
+
+
+
+}
+
+.skills {
+    @include paddingPart();
+    display:flex;
+    justify-content: space-between;
+    &-left {
+        width:300px;
+        height:300px;
+        perspective: 600px;
+        & .cube {
+            width:100%;
+            height:100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: translateZ(-300px);
+            animation:rotate 20s infinite linear;
+            &-face {
+                position: absolute;
+                width:300px;
+                height:300px;
+                padding:4rem;
+          
+                  background:rgba(#233D56,0.4);
+                  outline: 1px;
+                & img {
+                    opacity: 0.6;
+                    filter: brightness(200%);
+                    -webkit-filter: brightness(200%);
+                    
+                }
+                &:nth-child(1){
+                    
+                    transform: rotateY(  0deg) translateZ(150px);
+                   
+                }
+                &:nth-child(2){
+                    transform: rotateY(  90deg) translateZ(150px);
+                 
+                }
+                &:nth-child(3){
+                    transform: rotateY(  180deg) translateZ(150px);
+                 
+                }
+                &:nth-child(4){
+                    transform: rotateY(  -90deg) translateZ(150px);
+                   
+                }
+                &:nth-child(5){
+                    transform: rotateX(  90deg) translateZ(150px);
+                
+                }
+                &:nth-child(6){
+                    transform: rotateX( -90deg) translateZ(150px);
+                
+                }
+            }
+        }
+    }
+    &-right {
+         
+        & h1 {
+             @include h1Style();
+        }
+        &-grid {
+            @include gridWrap(4);
+            grid-gap:5rem 1rem;
+          
+            & li {
+                font-size:1.6rem;
+                 .fa-html5 {
+                       color:#E34F26;
+                   }
+                 .fa-css3-alt {
+                     color:#32A2D8;
+                 }
+                 .fa-sass {
+                    color:#C76495;
+                 }
+                 .fa-js {
+                     color:#F0D918;
+                 }
+                 .fa-react {
+                    color:#64D6F4; 
+                 }
+               & i {
+                   font-size:1.8rem;
+                   margin-left:1rem;
+                  
+               }
+            }
+        }
+    }
+
+}
+
+
+@keyframes rotate {
+  from {
+      transform: rotateX(0deg) rotateY(0deg);
+
+  }
+  to {
+      transform: rotateX(360deg) rotateY(360deg);
+  }
+ 
+  
+}

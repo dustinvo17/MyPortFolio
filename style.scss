@@ -1,5 +1,8 @@
 @import './variable';
 @import './header';
+@import './about';
+@import './project';
+@import './footer';
 *, body {
     margin:0; 
     padding:0;
@@ -9,3 +12,19 @@
     
 
 }
+ img {
+            width:100%;
+            height:100%;
+            object-fit: cover;
+}
+p {
+    font-family: $font-rale;
+}
+h1 {
+    font-family: $font-muli;
+}
+a {
+    font-family: $font-mont;
+}
+
+

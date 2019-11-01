@@ -24,3 +24,76 @@
         opacity: 1;
     }
 }
+
+
+@keyframes colorChangeText {
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    100% {
+        filter:hue-rotate(360deg)
+    }
+}
+@keyframes navOpacity {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+// animation button span border
+@keyframes btn-span1{
+    0% {
+        transform: translateX(100%);
+    }
+    0% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes btn-span2{
+    0% {
+        transform: translateX(-100%);
+    }
+    0% {
+        transform: translateX(100%);
+    }
+}
+@keyframes btn-span3{
+    0% {
+        transform: translateY(100%);
+    }
+    0% {
+        transform: translateY(-100%);
+    }
+}
+@keyframes btn-span4{
+    0% {
+        transform: translateY(-100%);
+    }
+    0% {
+        transform: translateY(100%);
+    }
+}
+@keyframes arrow-down {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) ;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg);
+    }
+}
+@keyframes rotateCube {
+    from {
+        transform: translateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
