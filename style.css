@@ -808,7 +808,6 @@ a {
           transform: translateZ(-300px);
   -webkit-animation: rotate 20s infinite linear;
           animation: rotate 20s infinite linear;
-  margin-left: 3rem;
 }
 
 .skills-left .cube-face {
