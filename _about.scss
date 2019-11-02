@@ -9,26 +9,45 @@
     display: flex;
     justify-content: space-between;
 
+    @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+        padding: 3rem;
+
+
+    }
+
     & h1 {
-      
+
         @include h1Style();
+
     }
 
     & p {
         font-family: $font-rale;
         font-size: 1.6rem;
         line-height: 2.5;
-       
+
 
     }
 
     &-img {
         max-width: 40rem;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 1000px) {
+            margin-top: 3rem;
+
+        }
     }
 
     &-self {
 
         max-width: 60rem;
+
+        @media only screen and (max-width: 1000px) {
+            max-width: 100%;
+            text-align: center;
+        }
 
     }
 
@@ -38,92 +57,195 @@
 
 .skills {
     @include paddingPart();
-    display:flex;
+    display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+
+    }
+
     &-left {
-        width:300px;
-        height:300px;
+
+        width: 300px;
+        height: 300px;
         perspective: 600px;
+
+        @media only screen and (max-width: 1100px) {
+            width: 200px;
+            height: 200px;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            order: 2;
+            margin: 15rem auto;
+
+        }
+
+        @media only screen and (max-width: 510px) {
+            width: 150px;
+            height: 150px;
+        }
+
         & .cube {
-            width:100%;
-            height:100%;
+            width: 100%;
+            height: 100%;
             position: relative;
             transform-style: preserve-3d;
             transform: translateZ(-300px);
-            animation:rotate 20s infinite linear;
+            animation: rotate 20s infinite linear;
+            margin-left: 3rem;
+
             &-face {
                 position: absolute;
-                width:300px;
-                height:300px;
+                width: 300px;
+                height: 300px;
+
+                @media only screen and (max-width: 1100px) {
+                    width: 200px;
+                    height: 200px
+                }
+
+                @media only screen and (max-width: 510px) {
+                    width: 150px;
+                    height: 150px;
+                }
+
                 padding:4rem;
-          
-                  background:rgba(#233D56,0.4);
-                  outline: 1px;
+
+                background:rgba(#233D56, 0.4);
+                outline: 1px;
+
                 & img {
                     opacity: 0.6;
                     filter: brightness(200%);
                     -webkit-filter: brightness(200%);
-                    
+
                 }
-                &:nth-child(1){
-                    
-                    transform: rotateY(  0deg) translateZ(150px);
-                   
+
+                &:nth-child(1) {
+
+                    transform: rotateY(0deg) translateZ(150px);
+
+                    @media only screen and (max-width: 1100px) {
+                        transform: rotateY(0deg) translateZ(100px);
+                    }
+
+                    @media only screen and (max-width: 510px) {
+                        transform: rotateY(0deg) translateZ(75px);
+                    }
+
                 }
-                &:nth-child(2){
-                    transform: rotateY(  90deg) translateZ(150px);
-                 
+
+                &:nth-child(2) {
+                    transform: rotateY(90deg) translateZ(150px);
+
+                    @media only screen and (max-width: 1100px) {
+                        transform: rotateY(90deg) translateZ(100px);
+                    }
+
+                    @media only screen and (max-width: 510px) {
+                        transform: rotateY(90deg) translateZ(75px);
+                    }
                 }
-                &:nth-child(3){
-                    transform: rotateY(  180deg) translateZ(150px);
-                 
+
+                &:nth-child(3) {
+                    transform: rotateY(180deg) translateZ(150px);
+
+                    @media only screen and (max-width: 1100px) {
+                        transform: rotateY(180deg) translateZ(100px);
+                    }
+
+                    @media only screen and (max-width: 510px) {
+                        transform: rotateY(180deg) translateZ(75px);
+                    }
                 }
-                &:nth-child(4){
-                    transform: rotateY(  -90deg) translateZ(150px);
-                   
+
+                &:nth-child(4) {
+                    transform: rotateY(-90deg) translateZ(150px);
+
+                    @media only screen and (max-width: 1100px) {
+                        transform: rotateY(-90deg) translateZ(100px);
+                    }
+
+                    @media only screen and (max-width: 510px) {
+                        transform: rotateY(-90deg) translateZ(75px);
+                    }
                 }
-                &:nth-child(5){
-                    transform: rotateX(  90deg) translateZ(150px);
-                
+
+                &:nth-child(5) {
+                    transform: rotateX(90deg) translateZ(150px);
+
+                    @media only screen and (max-width: 1100px) {
+                        transform: rotateX(90deg) translateZ(100px);
+                    }
+
+                    @media only screen and (max-width: 510px) {
+                        transform: rotateX(90deg) translateZ(75px);
+                    }
                 }
-                &:nth-child(6){
-                    transform: rotateX( -90deg) translateZ(150px);
-                
+
+                &:nth-child(6) {
+                    transform: rotateX(-90deg) translateZ(150px);
+
+                    @media only screen and (max-width: 1100px) {
+                        transform: rotateX(-90deg) translateZ(100px);
+                    }
+
+                    @media only screen and (max-width: 510px) {
+                        transform: rotateX(-90deg) translateZ(75px);
+                    }
                 }
             }
         }
     }
+
     &-right {
-         
-        & h1 {
-             @include h1Style();
+        @media only screen and (max-width: 1000px) {
+            text-align: center;
         }
+
+        & h1 {
+            @include h1Style();
+        }
+
         &-grid {
             @include gridWrap(4);
-            grid-gap:5rem 1rem;
-          
+            grid-gap: 5rem 1rem;
+
+            @media only screen and (max-width: 600px) {
+                @include gridWrap(2);
+                grid-gap: 3rem 1rem;
+            }
+
             & li {
-                font-size:1.6rem;
-                 .fa-html5 {
-                       color:#E34F26;
-                   }
-                 .fa-css3-alt {
-                     color:#32A2D8;
-                 }
-                 .fa-sass {
-                    color:#C76495;
-                 }
-                 .fa-js {
-                     color:#F0D918;
-                 }
-                 .fa-react {
-                    color:#64D6F4; 
-                 }
-               & i {
-                   font-size:1.8rem;
-                   margin-left:1rem;
-                  
-               }
+                font-size: 1.6rem;
+
+                .fa-html5 {
+                    color: #E34F26;
+                }
+
+                .fa-css3-alt {
+                    color: #32A2D8;
+                }
+
+                .fa-sass {
+                    color: #C76495;
+                }
+
+                .fa-js {
+                    color: #F0D918;
+                }
+
+                .fa-react {
+                    color: #64D6F4;
+                }
+
+                & i {
+                    font-size: 1.8rem;
+                    margin-left: 1rem;
+
+                }
             }
         }
     }
@@ -132,13 +254,14 @@
 
 
 @keyframes rotate {
-  from {
-      transform: rotateX(0deg) rotateY(0deg);
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
 
-  }
-  to {
-      transform: rotateX(360deg) rotateY(360deg);
-  }
- 
-  
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+
+
 }
