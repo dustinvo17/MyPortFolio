@@ -7,18 +7,30 @@
 .footer {
     background:#010001;
     color:$color-white;
-    @include paddingPart();
+    padding:5rem 0;
+    & .copy-right {
+        font-size:1.6rem;
+        font-family: $font-muli;
+        text-align: center;
+        margin-top:3rem;
+       
+    }
     & h1 {
         @include h1Style();
-        display: block;
-        text-align: center;
-        border:none;
+        
        
+       
+    }
+    &-contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
     }
     & ul {
         display:flex;
         justify-content: center;
-        margin-bottom:6rem;
+       
         & li {
             position: relative;
             list-style: none;
@@ -66,10 +78,11 @@
         }
     }
     & .contact-info {
-        display: flex;
-        justify-content: space-between;
+       
         & p {
-            font-size:1.6rem;
+         
+            margin-bottom:3rem;
+            letter-spacing: 2px;
             & i {
                 font-size:1.8rem;
                 margin-right:1rem;

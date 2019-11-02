@@ -14,10 +14,11 @@
              flex-direction: column;
              align-items: center;
              border:1px solid #DDDDDD;
+             line-height: 1.5;
              & > * {
                  margin-bottom:2rem;
              }
-             & div {
+             & .item-img {
                  width:100%;
                  height:35rem;
                  & img {
@@ -28,7 +29,7 @@
                  }
              }
              & p {
-                 font-size:1.6rem;
+                
                     padding:0 1rem;
                  text-align: center;
 
@@ -36,23 +37,33 @@
              }
              & .tech{
                  margin-top:auto;
+                 margin-bottom:3rem;
              }
              & h2 {
                  font-size:2rem;
              }
-             & a {
+             &-source {
+                  & a {
+                 cursor: pointer;
                  font-size:1.6rem;
-                 font-weight:700;
+                 color:black;
                  margin-top:auto;
-                 color:#999999;
+                 border:1px solid black;
+                 border-radius: 5px;
+                 padding: 5px;
+                 &:not(:last-child){
+                     margin-right:2rem;
+                 }
                
                 
                  & i {
-                     font-size:2rem;
-                     margin-left:5px;
+                     font-size:1.8rem;
+                     margin-left:2px;
                      
                  }
              }
+             }
+           
             
             
          }
