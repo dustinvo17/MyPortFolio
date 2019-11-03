@@ -1,8 +1,11 @@
 @mixin hoverSocial($num) {
-    &:hover span:nth-child(#{$num}) {
+    @media all and (min-width:900px){
+         &:hover span:nth-child(#{$num}) {
         transform: translate(calc((#{$num} - 1) * 1rem), calc((#{$num} - 1) * -1rem));
         opacity: calc(0.2 * #{$num});
     }
+    }
+   
 }
 
 .footer {

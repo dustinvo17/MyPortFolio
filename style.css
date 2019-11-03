@@ -671,7 +671,6 @@ a {
   .header-arrow-down span {
     width: 1.2rem;
     height: 1.2rem;
-    margin: -2rem;
   }
 }
 
@@ -1312,34 +1311,44 @@ a {
   }
 }
 
-.footer ul li:hover span:nth-child(5) {
-  -webkit-transform: translate(calc((5 - 1) * 1rem), calc((5 - 1) * -1rem));
-          transform: translate(calc((5 - 1) * 1rem), calc((5 - 1) * -1rem));
-  opacity: calc(0.2 * 5);
+@media all and (min-width: 900px) {
+  .footer ul li:hover span:nth-child(5) {
+    -webkit-transform: translate(calc((5 - 1) * 1rem), calc((5 - 1) * -1rem));
+            transform: translate(calc((5 - 1) * 1rem), calc((5 - 1) * -1rem));
+    opacity: calc(0.2 * 5);
+  }
 }
 
-.footer ul li:hover span:nth-child(4) {
-  -webkit-transform: translate(calc((4 - 1) * 1rem), calc((4 - 1) * -1rem));
-          transform: translate(calc((4 - 1) * 1rem), calc((4 - 1) * -1rem));
-  opacity: calc(0.2 * 4);
+@media all and (min-width: 900px) {
+  .footer ul li:hover span:nth-child(4) {
+    -webkit-transform: translate(calc((4 - 1) * 1rem), calc((4 - 1) * -1rem));
+            transform: translate(calc((4 - 1) * 1rem), calc((4 - 1) * -1rem));
+    opacity: calc(0.2 * 4);
+  }
 }
 
-.footer ul li:hover span:nth-child(3) {
-  -webkit-transform: translate(calc((3 - 1) * 1rem), calc((3 - 1) * -1rem));
-          transform: translate(calc((3 - 1) * 1rem), calc((3 - 1) * -1rem));
-  opacity: calc(0.2 * 3);
+@media all and (min-width: 900px) {
+  .footer ul li:hover span:nth-child(3) {
+    -webkit-transform: translate(calc((3 - 1) * 1rem), calc((3 - 1) * -1rem));
+            transform: translate(calc((3 - 1) * 1rem), calc((3 - 1) * -1rem));
+    opacity: calc(0.2 * 3);
+  }
 }
 
-.footer ul li:hover span:nth-child(2) {
-  -webkit-transform: translate(calc((2 - 1) * 1rem), calc((2 - 1) * -1rem));
-          transform: translate(calc((2 - 1) * 1rem), calc((2 - 1) * -1rem));
-  opacity: calc(0.2 * 2);
+@media all and (min-width: 900px) {
+  .footer ul li:hover span:nth-child(2) {
+    -webkit-transform: translate(calc((2 - 1) * 1rem), calc((2 - 1) * -1rem));
+            transform: translate(calc((2 - 1) * 1rem), calc((2 - 1) * -1rem));
+    opacity: calc(0.2 * 2);
+  }
 }
 
-.footer ul li:hover span:nth-child(1) {
-  -webkit-transform: translate(calc((1 - 1) * 1rem), calc((1 - 1) * -1rem));
-          transform: translate(calc((1 - 1) * 1rem), calc((1 - 1) * -1rem));
-  opacity: calc(0.2 * 1);
+@media all and (min-width: 900px) {
+  .footer ul li:hover span:nth-child(1) {
+    -webkit-transform: translate(calc((1 - 1) * 1rem), calc((1 - 1) * -1rem));
+            transform: translate(calc((1 - 1) * 1rem), calc((1 - 1) * -1rem));
+    opacity: calc(0.2 * 1);
+  }
 }
 
 @media only screen and (max-width: 600px) {
