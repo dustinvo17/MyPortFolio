@@ -2,7 +2,7 @@
 
 .project {
     @include paddingPart();
-
+    display:none;
     & h1 {
         @include h1Style();
 

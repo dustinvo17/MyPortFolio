@@ -415,7 +415,7 @@ a {
 @media only screen and (max-width: 510px) {
   .header-btn {
     letter-spacing: 1px;
-    padding: 1rem;
+    padding: 7px;
   }
 }
 
@@ -554,6 +554,10 @@ a {
   cursor: pointer;
 }
 
+.navbar-links li a {
+  color: #ffff;
+}
+
 .navbar-links li a:hover {
   color: #35BDEE;
 }
@@ -565,6 +569,12 @@ a {
 @media only screen and (max-width: 510px) {
   .navbar-links li:not(:last-child) {
     margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .navbar-links li:not(:last-child) {
+    margin-right: 1.5rem;
   }
 }
 
@@ -604,8 +614,14 @@ a {
 
 @media only screen and (max-width: 450px) {
   .header-intro {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     letter-spacing: 0;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .header-intro {
+    font-size: 1.3rem;
   }
 }
 
@@ -651,6 +667,14 @@ a {
   opacity: 0;
 }
 
+@media only screen and (max-width: 510px) {
+  .header-arrow-down span {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: -2rem;
+  }
+}
+
 .header-arrow-down span:nth-child(1) {
   -webkit-animation-delay: 4.6s;
           animation-delay: 4.6s;
@@ -679,9 +703,7 @@ a {
 
 .about {
   padding: 10rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -751,9 +773,7 @@ a {
 
 .skills {
   padding: 10rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1065,6 +1085,7 @@ a {
 
 .project {
   padding: 10rem 0;
+  display: none;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1203,6 +1224,7 @@ a {
   background: #010001;
   color: #ffff;
   padding: 5rem 0;
+  display: none;
 }
 
 @media only screen and (max-width: 1000px) {

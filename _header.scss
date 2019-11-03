@@ -133,8 +133,11 @@ a {
 
         @media only screen and (max-width: 510px) {
             letter-spacing: 1px;
-            padding: 1rem;
-        }
+            padding: 7px;
+        }   
+         @media only screen and (max-width: 400px) {
+
+         }
 
         &:hover {
             filter: brightness(150%);
@@ -216,7 +219,7 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
+    
     animation: navOpacity 1s linear forwards;
     animation-delay: 4.75s;
 
@@ -251,7 +254,9 @@ a {
             display: flex;
             align-items: center;
             cursor: pointer;
-
+            & a {
+                color:$color-white;
+            }
             & a:hover {
                 color: $color-nav;
             }
@@ -264,6 +269,9 @@ a {
             @media only screen and (max-width: 510px) {
                 margin-right: 2rem;
             }
+             @media only screen and (max-width: 350px) {
+                margin-right:1.5rem;
+             }
         }
     }
 }
@@ -295,9 +303,13 @@ a {
     }
 
     @media only screen and (max-width: 450px) {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         letter-spacing: 0;
     }
+    @media only screen and (max-width: 350px) {
+        font-size:1.3rem;
+    }
+
 
     &::before {
         content: attr(data-text);
@@ -337,6 +349,11 @@ a {
         animation: arrow-down 2s infinite;
         cursor: pointer;
         opacity: 0;
+          @media only screen and (max-width: 510px) {
+        width:1.2rem;
+        height:1.2rem;
+        margin:-2rem;
+    }
 
         &:nth-child(1) {
             animation-delay: 4.6s;
